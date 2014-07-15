@@ -1,0 +1,22 @@
+{
+  "name": "adminLTE",
+  "version": "0.0.0",
+  "description": "the new look for cpanel (infoib)",
+  "main": "../index.html",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "authors": [
+    "HBTB"
+  ],
+  "license": "MIT",
+  "homepage": "../index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
