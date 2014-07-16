@@ -5,10 +5,13 @@ module.exports = function (grunt) {
             rootDir: 'C:/xampp/htdocs/test'
         },
         'less': {
+            options:{
+                dumpLineNumbers: false//'all'
+            },
             dev: {
                 files: {
-                    '../css/test.css': '<%= vars.rootDir %>/less/test.less',
-                    '../css/AdminLTE.css': '<%= vars.rootDir %>/less/AdminLTE.less'
+                    '../css/bootstrap.css': '<%= vars.rootDir %>/less/bootstrap/bootstrap.less',
+                    '../css/AdminLTE.css': '<%= vars.rootDir %>/less/adminLTE/AdminLTE.less'
                 }
             }
         },
