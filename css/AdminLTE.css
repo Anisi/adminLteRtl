@@ -375,7 +375,7 @@ body > .header .navbar .nav > li.user > a {
 body > .header .navbar .nav > li.user > a > .fa,
 body > .header .navbar .nav > li.user > a > .glyphicon,
 body > .header .navbar .nav > li.user > a > .ion {
-  margin-right: 5px;
+  margin-left: 5px;
 }
 body > .header .navbar .nav > li > a > .label {
   -webkit-border-radius: 50%;
@@ -589,7 +589,7 @@ body > .header .logo .icon {
 .user-panel > .info > a > .fa,
 .user-panel > .info > a > .ion,
 .user-panel > .info > a > .glyphicon {
-  margin-right: 3px;
+  margin-left: 3px;
 }
 /*
  * Off Canvas
@@ -687,6 +687,7 @@ body > .header .logo .icon {
   border-bottom: 1px solid #f4f4f4;
   color: #444444;
   font-size: 14px;
+  text-align: right;
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li.header:after,
 .navbar-nav > .messages-menu > .dropdown-menu > li.header:after,
@@ -758,6 +759,7 @@ body > .header .logo .icon {
 .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a {
   font-size: 12px;
   color: #444444;
+  text-align: right;
 }
 .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a > .glyphicon,
 .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a > .fa,
@@ -814,11 +816,12 @@ body > .header .logo .icon {
   margin-right: 45px;
   color: #444444;
   font-size: 15px;
+  text-align: right;
 }
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > h4 > small {
   color: #999999;
   font-size: 10px;
-  float: right;
+  float: left;
 }
 .navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > p {
   margin: 0 0 0 45px;
@@ -841,6 +844,7 @@ body > .header .logo .icon {
   padding: 0;
   margin: 0 0 10px 0;
   color: #666666;
+  text-align: right;
 }
 .navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a > .progress {
   padding: 0;
@@ -1908,7 +1912,7 @@ Component: timeline
   width: 40px;
 }
 .btn.btn-social-old > .fa + span {
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 .btn.btn-social-old span {
   padding: 10px;
@@ -1933,7 +1937,7 @@ Component: timeline
   margin: 0 0 20px 0;
   padding: 15px 15px 15px 15px;
   padding-left: 30px;
-  border-left: 5px solid #eee;
+  border-right: 5px solid #eee;
 }
 .callout h4 {
   margin-top: 0;
@@ -2185,7 +2189,7 @@ Component: timeline
 */
 /* ADD THIS CLASS TO THE <HTML> TAG */
 .lockscreen {
-  background: url(../../img/blur-background09.jpg) repeat center center fixed;
+  background: url(../img/blur-background09.jpg) repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2350,7 +2354,7 @@ Component: timeline
   }
 }
 .error-page > .headline {
-  float: left;
+  float: right;
   font-size: 100px;
   font-weight: 300;
 }
@@ -2444,7 +2448,7 @@ Component: timeline
   color: #f6f6f6;
 }
 .skin-blue .navbar .navbar-right > .nav {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .skin-blue .navbar .sidebar-toggle .icon-bar {
   background: rgba(255, 255, 255, 0.8);
@@ -2595,7 +2599,7 @@ Component: timeline
   color: #999999;
 }
 .skin-black .navbar .navbar-right > .nav {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .skin-black .navbar .sidebar-toggle .icon-bar {
   background: #333333;

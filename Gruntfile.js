@@ -10,7 +10,7 @@ module.exports = function (grunt) {
             },
             dev: {
                 files: {
-                    '../css/bootstrap.css': '<%= vars.rootDir %>/less/bootstrap/bootstrap.less',
+                    '../css/bootstrap.min.css': '<%= vars.rootDir %>/less/bootstrap/bootstrap.less',
                     '../css/AdminLTE.css': '<%= vars.rootDir %>/less/adminLTE/AdminLTE.less'
                 }
             }

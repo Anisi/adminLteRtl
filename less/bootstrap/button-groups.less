@@ -10,7 +10,7 @@
   vertical-align: middle; // match .btn alignment given font-size hack above
   > .btn {
     position: relative;
-    float: left;
+    float: @float;
     // Bring the "active" button to the front
     &:hover,
     &:focus,
@@ -31,23 +31,23 @@
   .btn + .btn-group,
   .btn-group + .btn,
   .btn-group + .btn-group {
-    margin-left: -1px;
+    margin-@{float}: -1px;
   }
 }
 
 // Optional: Group multiple button groups together for a toolbar
 .btn-toolbar {
-  margin-left: -5px; // Offset the first child's margin
+  margin-@{float}: -5px; // Offset the first child's margin
   &:extend(.clearfix all);
 
   .btn-group,
   .input-group {
-    float: left;
+    float: @float;
   }
   > .btn,
   > .btn-group,
   > .input-group {
-    margin-left: 5px;
+    margin-@{float}: 5px;
   }
 }
 
@@ -57,7 +57,7 @@
 
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group > .btn:first-child {
-  margin-left: 0;
+  margin-@{float}: 0;
   &:not(:last-child):not(.dropdown-toggle) {
     .border-right-radius(0);
   }
@@ -70,7 +70,7 @@
 
 // Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group)
 .btn-group > .btn-group {
-  float: left;
+  float: @float;
 }
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
@@ -128,7 +128,7 @@
 
 // Reposition the caret
 .btn .caret {
-  margin-left: 0;
+  margin-@{float}: 0;
 }
 // Carets in other button sizes
 .btn-lg .caret {
@@ -167,7 +167,7 @@
   > .btn-group + .btn,
   > .btn-group + .btn-group {
     margin-top: -1px;
-    margin-left: 0;
+    margin-@{float}: 0;
   }
 }
 
@@ -176,11 +176,11 @@
     border-radius: 0;
   }
   &:first-child:not(:last-child) {
-    border-top-right-radius: @border-radius-base;
+    border-top-@{opposite-float}-radius: @border-radius-base;
     .border-bottom-radius(0);
   }
   &:last-child:not(:first-child) {
-    border-bottom-left-radius: @border-radius-base;
+    border-bottom-@{float}-radius: @border-radius-base;
     .border-top-radius(0);
   }
 }
@@ -218,7 +218,7 @@
   }
 
   > .btn-group .dropdown-menu {
-    left: auto;
+    @{float}: auto;
   }
 }
 

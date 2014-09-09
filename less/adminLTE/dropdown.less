@@ -52,6 +52,7 @@
     border-bottom: 1px solid #f4f4f4;
     color: #444444;
     font-size: 14px;
+    text-align: @float;
     &:after {
       // Add arrow to the top (you can change the width using border-width)
       bottom: 100%;
@@ -113,7 +114,7 @@
     > li > a {
       font-size: 12px;
       color: #444444;
-
+      text-align: @float;
       // Icons inside the menu
       > .glyphicon,
       > .fa,
@@ -171,11 +172,12 @@
         margin-@{float}:45px;
         color: #444444;
         font-size: 15px;
+        text-align: @float;
         // Small for message time display
         > small {
           color: #999999;
           font-size: 10px;
-          float: right;
+          float: @opposite-float;
         }
       }
 
@@ -203,6 +205,7 @@
         padding: 0;
         margin: 0 0 10px 0;
         color: #666666;
+        text-align: @float;
       }
 
       > .progress {
